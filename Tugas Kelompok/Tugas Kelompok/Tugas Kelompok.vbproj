@@ -46,11 +46,15 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="mysql.data">
+      <HintPath>..\..\..\..\PA\Project-Akhir-Pemrograman-Visual\K7_B1\K7_B1\bin\Debug\mysql.data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -70,6 +74,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="formEdit.Designer.vb">
+      <DependentUpon>formEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -77,10 +87,66 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="formGrafik.Designer.vb">
+      <DependentUpon>formGrafik.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formGrafik.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formIjazah.Designer.vb">
+      <DependentUpon>formIjazah.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formIjazah.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formIjazah2.Designer.vb">
+      <DependentUpon>formIjazah2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formIjazah2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formInfoIpk.Designer.vb">
+      <DependentUpon>formInfoIpk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formInfoIpk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formInput.Designer.vb">
+      <DependentUpon>formInput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formInput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formInformasi.Designer.vb">
+      <DependentUpon>formInformasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formInformasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formIpk.Designer.vb">
+      <DependentUpon>formIpk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formIpk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLaporan.Designer.vb">
+      <DependentUpon>formLaporan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formLaporan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMhs.Designer.vb">
+      <DependentUpon>formMhs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formMhs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -94,8 +160,38 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="formEdit.resx">
+      <DependentUpon>formEdit.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formGrafik.resx">
+      <DependentUpon>formGrafik.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formIjazah.resx">
+      <DependentUpon>formIjazah.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formIjazah2.resx">
+      <DependentUpon>formIjazah2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formInfoIpk.resx">
+      <DependentUpon>formInfoIpk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formInput.resx">
+      <DependentUpon>formInput.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formInformasi.resx">
+      <DependentUpon>formInformasi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formIpk.resx">
+      <DependentUpon>formIpk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formLaporan.resx">
+      <DependentUpon>formLaporan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMhs.resx">
+      <DependentUpon>formMhs.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -118,6 +214,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LogoUnmul-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
