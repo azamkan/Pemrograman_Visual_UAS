@@ -73,7 +73,7 @@ Partial Class formInput
         Me.Tidak.AutoSize = True
         Me.Tidak.Location = New System.Drawing.Point(72, 7)
         Me.Tidak.Name = "Tidak"
-        Me.Tidak.Size = New System.Drawing.Size(63, 20)
+        Me.Tidak.Size = New System.Drawing.Size(64, 21)
         Me.Tidak.TabIndex = 17
         Me.Tidak.TabStop = True
         Me.Tidak.Text = "Tidak"
@@ -84,7 +84,7 @@ Partial Class formInput
         Me.Ya.AutoSize = True
         Me.Ya.Location = New System.Drawing.Point(14, 7)
         Me.Ya.Name = "Ya"
-        Me.Ya.Size = New System.Drawing.Size(45, 20)
+        Me.Ya.Size = New System.Drawing.Size(46, 21)
         Me.Ya.TabIndex = 0
         Me.Ya.TabStop = True
         Me.Ya.Text = "Ya"
@@ -142,7 +142,7 @@ Partial Class formInput
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(273, 190)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(123, 16)
+        Me.Label5.Size = New System.Drawing.Size(132, 17)
         Me.Label5.TabIndex = 43
         Me.Label5.Text = "Pernah Mengulang "
         '
@@ -151,7 +151,7 @@ Partial Class formInput
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(273, 96)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(157, 16)
+        Me.Label4.Size = New System.Drawing.Size(165, 17)
         Me.Label4.TabIndex = 42
         Me.Label4.Text = "Nomor Induk Mahasiswa "
         '
@@ -160,7 +160,7 @@ Partial Class formInput
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(273, 290)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(27, 16)
+        Me.Label1.Size = New System.Drawing.Size(29, 17)
         Me.Label1.TabIndex = 41
         Me.Label1.Text = "IPK"
         '
@@ -169,7 +169,7 @@ Partial Class formInput
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(273, 240)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(95, 16)
+        Me.Label3.Size = New System.Drawing.Size(102, 17)
         Me.Label3.TabIndex = 40
         Me.Label3.Text = "Program Studi "
         '
@@ -178,7 +178,7 @@ Partial Class formInput
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(278, 43)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(103, 16)
+        Me.Label2.Size = New System.Drawing.Size(108, 17)
         Me.Label2.TabIndex = 39
         Me.Label2.Text = "Nama Lengkap "
         '
@@ -187,7 +187,7 @@ Partial Class formInput
         Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(273, 140)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(90, 16)
+        Me.Label6.Size = New System.Drawing.Size(95, 17)
         Me.Label6.TabIndex = 45
         Me.Label6.Text = "Jenis Kelamin"
         '
@@ -209,7 +209,7 @@ Partial Class formInput
         Me.pr.AutoSize = True
         Me.pr.Location = New System.Drawing.Point(114, 7)
         Me.pr.Name = "pr"
-        Me.pr.Size = New System.Drawing.Size(98, 20)
+        Me.pr.Size = New System.Drawing.Size(102, 21)
         Me.pr.TabIndex = 17
         Me.pr.TabStop = True
         Me.pr.Text = "Perempuan"
@@ -220,7 +220,7 @@ Partial Class formInput
         Me.lk.AutoSize = True
         Me.lk.Location = New System.Drawing.Point(14, 7)
         Me.lk.Name = "lk"
-        Me.lk.Size = New System.Drawing.Size(88, 20)
+        Me.lk.Size = New System.Drawing.Size(94, 21)
         Me.lk.TabIndex = 0
         Me.lk.TabStop = True
         Me.lk.Text = "Laki - Laki"
@@ -283,7 +283,7 @@ Partial Class formInput
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(468, 43)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(10, 16)
+        Me.Label7.Size = New System.Drawing.Size(12, 17)
         Me.Label7.TabIndex = 50
         Me.Label7.Text = ":"
         '
@@ -292,7 +292,7 @@ Partial Class formInput
         Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(468, 96)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(10, 16)
+        Me.Label8.Size = New System.Drawing.Size(12, 17)
         Me.Label8.TabIndex = 51
         Me.Label8.Text = ":"
         '
@@ -301,7 +301,7 @@ Partial Class formInput
         Me.Label9.AutoSize = True
         Me.Label9.Location = New System.Drawing.Point(468, 142)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(10, 16)
+        Me.Label9.Size = New System.Drawing.Size(12, 17)
         Me.Label9.TabIndex = 52
         Me.Label9.Text = ":"
         '
@@ -310,7 +310,7 @@ Partial Class formInput
         Me.Label10.AutoSize = True
         Me.Label10.Location = New System.Drawing.Point(468, 192)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(10, 16)
+        Me.Label10.Size = New System.Drawing.Size(12, 17)
         Me.Label10.TabIndex = 53
         Me.Label10.Text = ":"
         '
@@ -319,7 +319,7 @@ Partial Class formInput
         Me.Label11.AutoSize = True
         Me.Label11.Location = New System.Drawing.Point(468, 243)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(10, 16)
+        Me.Label11.Size = New System.Drawing.Size(12, 17)
         Me.Label11.TabIndex = 54
         Me.Label11.Text = ":"
         '
@@ -328,7 +328,7 @@ Partial Class formInput
         Me.Label12.AutoSize = True
         Me.Label12.Location = New System.Drawing.Point(468, 290)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(10, 16)
+        Me.Label12.Size = New System.Drawing.Size(12, 17)
         Me.Label12.TabIndex = 55
         Me.Label12.Text = ":"
         '

@@ -8,6 +8,7 @@ Public Class formIjazah
     Dim pictureBoxLogo As New PictureBox()
     Dim pictureBoxBorder As New PictureBox()
     Dim ttd As New PictureBox()
+    Dim headerPanel As Panel
 
     Private Sub formIjazah_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim lineLabel As New Label()
@@ -22,9 +23,9 @@ Public Class formIjazah
         Me.PrintPreviewDialog1.Document = Me.PrintDocument1
 
         Try
-            pictureBoxLogo.Image = Image.FromFile("D:\Coding\Visual Basic\UAS\Pemrograman_Visual_UAS\Tugas Kelompok\Tugas Kelompok\Resources\LogoUnmul-1.png")
-            pictureBoxBorder.Image = Image.FromFile("D:\Coding\Visual Basic\UAS\Pemrograman_Visual_UAS\Tugas Kelompok\Tugas Kelompok\Resources\border.png") ' ini border sertifikat
-            ttd.Image = Image.FromFile("D:\Coding\Visual Basic\UAS\Pemrograman_Visual_UAS\Tugas Kelompok\Tugas Kelompok\Resources\ttd.png")
+            pictureBoxLogo.Image = Image.FromFile("D:\Data\Documents\Kuliah\S4\PemrogramanVisual\UAS\fromgit\fix1\Pemrograman_Visual_UAS\Tugas Kelompok\Tugas Kelompok\Resources\LogoUnmul-1.png")
+            pictureBoxBorder.Image = Image.FromFile("D:\Data\Documents\Kuliah\S4\PemrogramanVisual\UAS\fromgit\fix1\Pemrograman_Visual_UAS\Tugas Kelompok\Tugas Kelompok\Resources\border.png") ' ini border sertifikat
+            ttd.Image = Image.FromFile("D:\Data\Documents\Kuliah\S4\PemrogramanVisual\UAS\fromgit\fix1\Pemrograman_Visual_UAS\Tugas Kelompok\Tugas Kelompok\Resources\ttd.png")
         Catch ex As Exception
             MessageBox.Show("Failed to load image.")
         End Try
@@ -85,8 +86,7 @@ Public Class formIjazah
             Dim headerPanel As New Panel With {
             .Width = panelProduk.Width - 20,
             .Height = 40,
-            .BackColor = Color.LightGray ' Optional: Change background color for better visibility
-        }
+            .BackColor = Color.LightGray} 'Optional: Change background color for better visibility
 
             AddHeaderLabel(headerPanel, "No", 10)
             AddHeaderLabel(headerPanel, "NIM", 50)
@@ -371,4 +371,5 @@ Public Class formIjazah
         textXCentered = (borderWidth - textSize.Width) / 2
         e.Graphics.DrawString(certificateText, f, br, textXCentered, textY)
     End Sub
+
 End Class

@@ -14,8 +14,8 @@ Public Class formIpk
         Dim headerPanel As New Panel With {
             .Width = FlowLayoutPanel1.Width - 20,
             .Height = 40,
-            .BackColor = Color.LightGray ' Optional: Change background color for better visibility
-        }
+            .BackColor = Color.LightGray} 'Optional: Change background color for better visibility
+
 
         AddHeaderLabel(headerPanel, "No", 10)
         AddHeaderLabel(headerPanel, "Prodi", 50)

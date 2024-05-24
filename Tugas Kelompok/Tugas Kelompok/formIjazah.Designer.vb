@@ -67,7 +67,7 @@ Partial Class formIjazah
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(8, 28)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(92, 16)
+        Me.Label1.Size = New System.Drawing.Size(98, 17)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Program Studi"
         '

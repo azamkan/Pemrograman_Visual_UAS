@@ -47,7 +47,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="mysql.data">
-      <HintPath>..\..\..\..\PA\Project-Akhir-Pemrograman-Visual\K7_B1\K7_B1\bin\Debug\mysql.data.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Downloads\mysql-connector-net-6.6.4-noinstall\mysql-connector-net-6.6.4-noinstall\v4\mysql.data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

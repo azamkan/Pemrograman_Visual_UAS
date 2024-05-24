@@ -5,7 +5,7 @@ Imports MySql.Data.MySqlClient
 Public Class formInput
     Dim gambarPath As String = ""
     Dim idMhs As Integer
-    Dim ipk = Val(txtIpk)
+    Dim ipk As Decimal '= Val(txtIpk)
     Private Sub fromInput_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         koneksi()
     End Sub
@@ -48,6 +48,7 @@ Public Class formInput
     End Sub
     Private Sub btnSimpan_Click(sender As Object, e As EventArgs) Handles btnSimpan.Click
         koneksi()
+        Decimal.TryParse(txtIpk.Text, ipk)
         If txtNama.Text = "" OrElse txtNim.Text = "" OrElse cmbJurusan.Text = "" OrElse txtIpk.Text = "" Then
             MsgBox("Data belum lengkap", MessageBoxIcon.Warning)
         ElseIf Not (lk.Checked Or pr.Checked) Then
@@ -126,15 +127,15 @@ Public Class formInput
         End If
     End Sub
 
-    Private Sub txtNama_KeyPress(sender As Object, e As KeyPressEventArgs)
-        HanyaHuruf(e)
-    End Sub
-    Private Sub txtNim_KeyPress(sender As Object, e As KeyPressEventArgs)
-        HanyaAngka(e)
-    End Sub
-    Private Sub txtIpk_KeyPress(sender As Object, e As KeyPressEventArgs)
-        khususipk(e)
-    End Sub
+    'Private Sub txtNama_KeyPress(sender As Object, e As KeyPressEventArgs)
+    '    HanyaHuruf(e)
+    'End Sub
+    'Private Sub txtNim_KeyPress(sender As Object, e As KeyPressEventArgs)
+    '    HanyaAngka(e)
+    'End Sub
+    'Private Sub txtIpk_KeyPress(sender As Object, e As KeyPressEventArgs)
+    '    khususipk(e)
+    'End Sub
     Sub Kosong()
         txtNama.Clear()
         txtIpk.Clear()
@@ -180,5 +181,17 @@ Public Class formInput
 
     Private Sub btnTambah_Click(sender As Object, e As EventArgs) Handles btnTambah.Click
         Form1.childform(formMhs)
+    End Sub
+
+    Private Sub txtNama_KeyPress1(sender As Object, e As KeyPressEventArgs) Handles txtNama.KeyPress
+        HanyaHuruf(e)
+    End Sub
+
+    Private Sub txtNim_KeyPress1(sender As Object, e As KeyPressEventArgs) Handles txtNim.KeyPress
+        HanyaAngka(e)
+    End Sub
+
+    Private Sub txtIpk_KeyPress1(sender As Object, e As KeyPressEventArgs) Handles txtIpk.KeyPress
+        khususipk(e)
     End Sub
 End Class
