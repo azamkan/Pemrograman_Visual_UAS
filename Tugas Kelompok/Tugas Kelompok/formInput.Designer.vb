@@ -101,7 +101,7 @@ Partial Class formInput
         'txtNim
         '
         Me.txtNim.Location = New System.Drawing.Point(484, 90)
-        Me.txtNim.MaxLength = 10
+        Me.txtNim.MaxLength = 35
         Me.txtNim.Name = "txtNim"
         Me.txtNim.Size = New System.Drawing.Size(226, 22)
         Me.txtNim.TabIndex = 29
@@ -119,7 +119,7 @@ Partial Class formInput
         'txtNama
         '
         Me.txtNama.Location = New System.Drawing.Point(484, 43)
-        Me.txtNama.MaxLength = 25
+        Me.txtNama.MaxLength = 50
         Me.txtNama.Name = "txtNama"
         Me.txtNama.Size = New System.Drawing.Size(226, 22)
         Me.txtNama.TabIndex = 25

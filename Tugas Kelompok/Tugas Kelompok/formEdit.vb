@@ -186,13 +186,15 @@ Public Class formEdit
         End If
     End Sub
 
-    Private Sub txtNama_KeyPress(sender As Object, e As KeyPressEventArgs)
+    Private Sub txtNama_KeyPress1(sender As Object, e As KeyPressEventArgs) Handles txtNama.KeyPress
         HanyaHuruf(e)
     End Sub
-    Private Sub txtNim_KeyPress(sender As Object, e As KeyPressEventArgs)
+
+    Private Sub txtNim_KeyPress1(sender As Object, e As KeyPressEventArgs) Handles txtNim.KeyPress
         HanyaAngka(e)
     End Sub
-    Private Sub txtIpk_KeyPress(sender As Object, e As KeyPressEventArgs)
+
+    Private Sub txtIpk_KeyPress1(sender As Object, e As KeyPressEventArgs) Handles txtIpk.KeyPress
         khususipk(e)
     End Sub
 End Class

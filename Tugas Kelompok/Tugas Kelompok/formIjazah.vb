@@ -248,6 +248,8 @@ Public Class formIjazah
                     predikat = "Sangat Memuaskan"
                 ElseIf ipk >= 3.0 AndAlso ulang = "Ya" Then
                     predikat = "Memuaskan"
+                ElseIf ipk >= 3.0 AndAlso ulang = "Tidak" Then
+                    predikat = "Memuaskan"
                 ElseIf ipk >= 2.75 And ipk < 3.0 Then
                     predikat = "Memuaskan"
                 ElseIf ipk >= 2.0 And ipk <= 2.75 Then

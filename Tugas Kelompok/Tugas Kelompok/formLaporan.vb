@@ -45,6 +45,7 @@ Public Class formLaporan
     End Sub
 
     Private Sub cbProdi_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbProdi.SelectedIndexChanged
+        koneksi()
         If cbProdi.SelectedIndex >= 0 Then
             selectProdi = cbProdi.SelectedItem.ToString()
             LoadMhs()
@@ -133,6 +134,8 @@ Public Class formLaporan
             ElseIf ipk >= 3.5 AndAlso ipk < 3.79 AndAlso ulang = "Ya" Then
                 predikat = "Sangat Memuaskan"
             ElseIf ipk >= 3.0 AndAlso ulang = "Ya" Then
+                predikat = "Memuaskan"
+            ElseIf ipk >= 3.0 AndAlso ulang = "Tidak" Then
                 predikat = "Memuaskan"
             ElseIf ipk >= 2.75 AndAlso ipk < 3.0 Then
                 predikat = "Memuaskan"
